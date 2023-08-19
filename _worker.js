@@ -49,7 +49,7 @@ export default {
                             },
                         });
                     case '/connect': // for test connect to cf socket
-                        const [hostname, port] = ['cloudflare.com', '443'];
+                        const [hostname, port] = ['cloudflare.com', '80'];
                         console.log(`Connecting to ${hostname}:${port}...`);
 
                         try {
@@ -164,7 +164,7 @@ async function vlessOverWSHandler(request) {
             const {
                 hasError,
                 message,
-                portRemote = 2053,
+                portRemote = 443,
                 addressRemote = '',
                 rawDataIndex,
                 vlessVersion = new Uint8Array([0, 0]),
