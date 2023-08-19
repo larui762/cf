@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '32fa3b63-7735-495c-8129-a2728b52680d';
 
-const proxyIPs = ['146.56.189.167','146.56.166.153'];
+const proxyIPs = ['140.83.37.223','140.83.37.84'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://sky.rethinkdns.com/1:-Pf_____9_8A_AMAIgE8kMABVDDmKOHTAKg='; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
@@ -49,7 +49,7 @@ export default {
                             },
                         });
                     case '/connect': // for test connect to cf socket
-                        const [hostname, port] = ['cloudflare.com', '80'];
+                        const [hostname, port] = ['cloudflare.com', '443'];
                         console.log(`Connecting to ${hostname}:${port}...`);
 
                         try {
