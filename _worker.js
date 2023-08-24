@@ -10,7 +10,7 @@ let userID = '32fa3b63-7735-495c-8129-a2728b52680d';
 const proxyIPs = ['124.156.238.155'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
-let dohURL = 'https://cloudflare-dns.com/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
+let dohURL = 'https://doh.pub/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
 
 // v2board api environment variables (optional)
 // now deprecated, please use planetscale.com instead
