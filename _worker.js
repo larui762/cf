@@ -7,7 +7,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '32fa3b63-7735-495c-8129-a2728b52680d';
 
-const proxyIPs = ['124.156.238.155'];
+const proxyIPs = ['155.248.187.29'];
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
 let dohURL = 'https://doh.pub/dns-query'; // https://cloudflare-dns.com/dns-query or https://dns.google/dns-query
